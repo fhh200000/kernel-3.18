@@ -36,7 +36,7 @@
 #endif
 
 #ifdef CONFIG_ARCH_MT6797
-#include <../misc/mediatek/base/power/mt6797/mt_cpufreq.h>
+#include "../misc/mediatek/base/power/mt6797/mt_cpufreq.h"
 #endif
 
 #if (defined CONFIG_ARCH_MT6755) || (defined CONFIG_ARCH_MT6797)

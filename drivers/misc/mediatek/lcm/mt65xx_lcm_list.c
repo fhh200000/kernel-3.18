@@ -37,6 +37,9 @@ LCM_DRIVER *lcm_driver_list[] = {
 #if defined(R63419_WQHD_BOYI_VDO)
 	&r63419_wqhd_boyi_vdo_lcm_drv,
 #endif
+#if defined(R63419_WQHD_TRULY_PHANTOM_2K_CMD_OK)
+    &r63419_wqhd_truly_phantom_cmd_lcm_drv,
+#endif
 #if defined(R63419_WQHD_LIDE_VDO)
 	&r63419_wqhd_lide_vdo_lcm_drv,
 #endif
@@ -57,6 +60,9 @@ LCM_DRIVER *lcm_driver_list[] = {
 };
 
 unsigned char lcm_name_list[][128] = {
+#if defined(R63419_WQHD_TRULY_PHANTOM_2K_CMD_OK)
+    "r63419_wqhd_truly_phantom_2k_cmd_ok"
+#endif
 };
 
 #define LCM_COMPILE_ASSERT(condition) LCM_COMPILE_ASSERT_X(condition, __LINE__)
